@@ -13,3 +13,10 @@
 - [第8章](https://nlp100.github.io/ja/ch08.html)
 - [第9章](https://nlp100.github.io/ja/ch09.html)
 - [第10章](https://nlp100.github.io/ja/ch10.html)
+
+## Build
+```sh
+cd <this repo>
+```
+
+あとは section[1-9]/README.md があれば #Build に従って実行準備をしてね
