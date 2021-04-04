@@ -24,6 +24,10 @@ pattern = re.compile(r'\n\|(.+?)(?:\s*)=(?:\s*)(.+?)\n')
 
 field_list = pattern.findall(template[0])
 
-field_dict = {f[0]: f[1].replace('<br />', '') for f in field_list}
+field_dict = {
+    f[0]:
+    f[1].replace("\'\'\'\'\'", "").replace("\'\'\'", "").replace("\'\'", "")
+    for f in field_list
+}
 
 pprint(field_dict)
