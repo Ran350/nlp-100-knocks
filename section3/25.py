@@ -21,7 +21,7 @@ template = template_pattern.findall(uk_data)
 
 
 # 各フィールドとその値を抽出
-pattern = re.compile(r'\n\|(.+?)(?:\s*)=(?:\s*)(.+?)\n')
+pattern = re.compile(r'\n\|(.+?)(?:\s*)=(?:\s*)(.+?)(?=\n)')
 field_list = pattern.findall(template[0])
 
 field_dict = {f[0]: f[1] for f in field_list}
