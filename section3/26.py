@@ -20,7 +20,7 @@ template = template_pattern.findall(uk_data)
 
 
 # 各フィールドとその値を抽出
-pattern = re.compile(r'\n\|(.+?)(?:\s*)=(?:\s*)(.+?)\n')
+pattern = re.compile(r'\n\|(.+?)(?:\s*)=(?:\s*)(.+?)(?=\n)')
 
 field_list = pattern.findall(template[0])
 
